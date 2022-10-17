@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    color: #fff;
+}
+
+header {
+    background-color: blue;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+main {
+    background-color: red;
+    grid-row: 2/-2;
+    grid-column: 2/-1;
+}
+
+aside {
+    background-color: green;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+footer {
+    background-color: purple;
+    grid-row: -1/-2;
+    grid-column: 1/-1;
+}
